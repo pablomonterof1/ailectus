@@ -49,7 +49,6 @@ dist/
 # --- Archivos generados por Django ---
 staticfiles/
 media/
-static/
 *.mo
 
 # --- Archivos de Passenger / cPanel ---

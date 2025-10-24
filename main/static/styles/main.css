@@ -1,0 +1,48 @@
+:root{
+  --ailectus-primary: #0E1424;  /* azul oscuro elegante */
+  --ailectus-accent:  #CC9933;  /* dorado */
+  --ailectus-accent2: #F57C1F;  /* naranja acento */
+  --ailectus-light:   #f6f7fb;
+}
+
+.bg-primary{ background-color: var(--ailectus-primary) !important; }
+.text-primary{ color: var(--ailectus-primary) !important; }
+.btn-primary{
+  background-color: var(--ailectus-primary);
+  border-color: var(--ailectus-primary);
+}
+.btn-outline-primary{
+  color: var(--ailectus-primary);
+  border-color: var(--ailectus-primary);
+}
+.btn-outline-primary:hover{
+  background: var(--ailectus-primary);
+  color: #fff;
+}
+
+/* Hero suave con degradado */
+.bg-gradient-hero{
+  background: linear-gradient(180deg, #ffffff 0%, #ffffff 40%, var(--ailectus-light) 100%);
+}
+
+/* Acento en texto */
+.brand-accent{ color: var(--ailectus-accent2); }
+
+/* Tarjetas de servicios */
+.service-card{
+  border: 1px solid #eee;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.service-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+}
+
+/* Portafolio (recortes bonitos) */
+.portfolio-thumb img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(1.02) contrast(1.02);
+  border: 1px solid #eaeaea;
+}
