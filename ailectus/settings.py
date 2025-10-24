@@ -65,8 +65,18 @@ WSGI_APPLICATION = 'ailectus.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': "django.db.backends.mysql",
+        'NAME': 'ailectus_database',
+        'USER': 'ailectus_user',
+        'PASSWORD': '2*_pgIO?oBMk(]la',
+        'HOST': '66.45.232.106',
+        'PORT': '3306',
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'; SET NAMES 'utf8mb4' COLLATE 'utf8mb4_unicode_ci'",
+            'charset': 'utf8mb4',
+            'collation': 'utf8mb4_unicode_ci',
+            'use_unicode': True,
+        },
     }
 }
 
@@ -114,3 +124,18 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# EMAIL (usa variables de entorno en producción)
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "mail.ailectus.com"     # o el host SMTP que te da cPanel
+EMAIL_PORT = 465                     # 465 (SSL) | 587 (TLS)
+EMAIL_USE_SSL = True                 # True si usas 465; si usas 587: False y pon EMAIL_USE_TLS = True
+EMAIL_USE_TLS = False
+EMAIL_HOST_USER = "noreply@ailectus.com"
+EMAIL_HOST_PASSWORD = "*KVu.vG-2TS(9T~@"  # No lo subas al repo. Usa .env
+DEFAULT_FROM_EMAIL = "Ailectus <noreply@ailectus.com>"
+SERVER_EMAIL = DEFAULT_FROM_EMAIL
+EMAIL_TIMEOUT = 30
+
+# (Opcional) quién recibe notificaciones de errores del servidor
+ADMINS = [("Admin", "admin@ailectus.com")]

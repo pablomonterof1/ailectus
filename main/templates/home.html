@@ -2,7 +2,8 @@
 {% load static %}
 
 {% block title %}Ailectus – Contenido educativo, OVAs, Moodle & IA{% endblock %}
-{% block meta_description %}Desarrollo de OVAs, cursos y consultoría en Moodle, IA aplicada a educación y capacitación técnica.{% endblock %}
+{% block meta_description %}Desarrollo de OVAs, cursos y consultoría en Moodle, IA aplicada a educación y capacitación
+técnica.{% endblock %}
 
 {% block content %}
 
@@ -12,21 +13,23 @@
     <div class="row align-items-center g-4">
       <div class="col-lg-7">
         <h1 class="display-5 fw-bold mb-3">
-          Construimos experiencias de aprendizaje con <span class="brand-accent">tecnología</span> y <span class="brand-accent">pedagogía</span>.
+          Construimos experiencias de aprendizaje con <span class="brand-accent">tecnología</span> y <span
+            class="brand-accent">pedagogía</span>.
         </h1>
         <p class="lead text-secondary">
-          OVAs, cursos, capacitación y consultoría con foco en Moodle e IA. 
+          OVAs, cursos, capacitación y consultoría con foco en Moodle e IA.
           Ingeniería en Electrónica y Telecomunicaciones + Máster en IA.
         </p>
         <div class="d-flex gap-2 mt-3">
           <a href="#servicios" class="btn btn-primary btn-lg">Ver servicios</a>
-          <a href="#contacto" class="btn btn-outline-primary btn-lg">Solicitar propuesta</a>
+          <a href="#" class="btn btn-outline-primary btn-lg">Acceder a la plataforma de cursos</a>
         </div>
       </div>
       <div class="col-lg-5 text-center">
-        <img src="{% static 'main/hero-illustration.svg' %}" class="img-fluid" alt="Ilustración Ailectus" />
+        <img src="{% static 'logo1.png' %}" class="img-fluid" alt="Ilustración Ailectus" />
       </div>
     </div>
+    
   </div>
 </section>
 
@@ -44,10 +47,11 @@
         <div class="card h-100 service-card">
           <div class="card-body">
             <div class="service-icon mb-3">
-              <img src="{% static 'main/icons/ova.svg' %}" height="40" alt="OVAs">
+              <img src="https://ailectus.com/imagenes/ovas.png" width="100%" alt="OVAs">
             </div>
             <h5 class="card-title">OVAs y recursos</h5>
-            <p class="card-text small text-secondary">Diseño instruccional, storyboards, interactividad (H5P/SCORM), accesibilidad y evaluación.</p>
+            <p class="card-text small text-secondary">Diseño instruccional, storyboards, interactividad (H5P/SCORM),
+              accesibilidad y evaluación.</p>
           </div>
         </div>
       </div>
@@ -57,10 +61,11 @@
         <div class="card h-100 service-card">
           <div class="card-body">
             <div class="service-icon mb-3">
-              <img src="{% static 'main/icons/course.svg' %}" height="40" alt="Cursos">
+              <img src="https://ailectus.com/imagenes/cursos.png" width="100%" alt="Cursos">
             </div>
             <h5 class="card-title">Cursos & talleres</h5>
-            <p class="card-text small text-secondary">TIC & TAC, IA para docentes, Moodle, competencias digitales, e-learning corporativo.</p>
+            <p class="card-text small text-secondary">TIC & TAC, IA para docentes, Moodle, competencias digitales,
+              e-learning corporativo.</p>
           </div>
         </div>
       </div>
@@ -70,10 +75,11 @@
         <div class="card h-100 service-card">
           <div class="card-body">
             <div class="service-icon mb-3">
-              <img src="{% static 'main/icons/consult.svg' %}" height="40" alt="Consultoría">
+              <img src="https://ailectus.com/imagenes/consult.png" width="100%" alt="Consultoría">
             </div>
             <h5 class="card-title">Consultoría</h5>
-            <p class="card-text small text-secondary">Arquitectura e-learning, QA de cursos, implementación de modelos pedagógicos y analítica.</p>
+            <p class="card-text small text-secondary">Arquitectura e-learning, QA de cursos, implementación de modelos
+              pedagógicos y analítica.</p>
           </div>
         </div>
       </div>
@@ -83,17 +89,28 @@
         <div class="card h-100 service-card">
           <div class="card-body">
             <div class="service-icon mb-3">
-              <img src="{% static 'main/icons/ai.svg' %}" height="40" alt="Moodle e IA">
+              <img src="https://ailectus.com/imagenes/iam.png" width="100%" alt="Moodle e IA">
             </div>
             <h5 class="card-title">Moodle & IA</h5>
-            <p class="card-text small text-secondary">Diseño, personalización, flujos de evaluación, integración con IA y automatizaciones.</p>
+            <p class="card-text small text-secondary">Diseño, personalización, flujos de evaluación, integración con IA
+              y automatizaciones.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
+<section class="py-5 brand-accent text-center" style="background-color: #345372;">
+  <div class="container" >
+    <h2 class="fw-bold mb-3">Campus Virtual Ailectus</h2>
+    <p class="text-secondary mb-4 text-white">
+      Accede a nuestros cursos, certificaciones y capacitaciones en línea.
+    </p>
+    <a href="https://cursos.ailectus.com" target="_blank" class="btn btn-primary btn-lg">
+      <i class="fa fa-graduation-cap me-2"></i> Acceder
+    </a>
+  </div>
+</section>
 <!-- PORTAFOLIO -->
 <section id="portafolio" class="py-5 bg-light">
   <div class="container">
@@ -106,7 +123,8 @@
       {% for i in "123456" %}
       <div class="col-6 col-md-4 col-lg-3">
         <div class="ratio ratio-4x3 portfolio-thumb">
-          <img src="{% static 'main/portfolio/sample-'|add:i|add:'.jpg' %}" class="rounded object-fit-cover" alt="Proyecto {{ i }}">
+          <img src="{% static 'main/portfolio/sample-'|add:i|add:'.jpg' %}" class="rounded object-fit-cover"
+            alt="Proyecto {{ i }}">
         </div>
       </div>
       {% endfor %}
