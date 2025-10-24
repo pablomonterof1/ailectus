@@ -1,0 +1,98 @@
+# ===========================================
+# GITIGNORE - Proyecto Django (Ailectus)
+# ===========================================
+
+# --- Archivos y carpetas de Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# --- Entornos virtuales ---
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# --- Archivos temporales o del sistema ---
+.DS_Store
+Thumbs.db
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+*.bak
+*.swp
+
+# --- Archivos del editor ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- Archivos de entorno y secretos ---
+.env
+*.env
+.env.*
+
+# --- Archivos de compilación o distribución ---
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Archivos generados por Django ---
+staticfiles/
+media/
+static/
+*.mo
+
+# --- Archivos de Passenger / cPanel ---
+passenger_wsgi.py
+tmp/
+logs/
+public/
+__PassengerTemp__/
+
+# --- Node / frontend (si más adelante integras herramientas JS) ---
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# --- Archivos de backup o exportaciones ---
+*.tar.gz
+*.zip
+*.bak
+*.old
+
+# --- Archivos específicos de OS ---
+ehthumbs.db
+Icon?
+desktop.ini
+
+# --- PyCharm / JetBrains ---
+.idea/
+
+# --- pytest / coverage ---
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# --- Jupyter / Notebooks ---
+.ipynb_checkpoints
+
+# --- Docker (si usas más adelante) ---
+docker-compose.override.yml
+*.pid
