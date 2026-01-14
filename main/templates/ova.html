@@ -1,0 +1,35 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block title %}{{ titulo }} – Ailectus{% endblock %}
+
+{% block content %}
+<section class="container py-5">
+
+  <div class="text-center mb-4">
+    <h1 class="fw-bold">{{ titulo }}</h1>
+    <p class="text-muted">
+      Recurso interactivo desarrollado por Ailectus
+    </p>
+  </div>
+
+  <!-- Marco del OVA -->
+  <div class="ova-frame">
+
+    <div class="ova-header">
+      <span>📘 Visualización del OVA</span>
+    </div>
+
+    <div class="ova-body">
+      <iframe 
+        src="{{ ova_url }}"
+        frameborder="0"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+
+</section>
+{% endblock %}

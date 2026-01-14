@@ -1,0 +1,263 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block title %}{{ titulo }} – Ailectus{% endblock %}
+
+{% block content %}
+<section class="container py-5">
+
+  <!-- HEADER -->
+  <div class="text-center mb-5">
+    <h1 class="fw-bold mb-2">Recursos abiertos</h1>
+    <p class="text-muted mb-0">
+      Recursos y herramientas gratuitas para tus clases.
+    </p>
+  </div>
+
+  <!-- SECCIÓN: MIS RECURSOS -->
+  <div class="section-card mb-5">
+    <div class="d-flex align-items-start justify-content-between flex-wrap gap-2 mb-3">
+      <div>
+        <h2 class="h5 fw-semibold mb-1">Usa lo que necesites: recursos gratuitos para tus clases.</h2>
+ 
+      </div>
+      <span class="badge badge-soft">Acceso directo</span>
+    </div>
+
+    <div class="table-responsive">
+      <table class="table align-middle mb-0 resource-table">
+        <thead>
+          <tr>
+            <th style="width: 18%">Tipo</th>
+            <th>Nombre del recurso</th>
+            <th style="width: 18%">Acceso</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <td>
+              <span class="badge bg-primary">OVA</span>
+            </td>
+            <td class="fw-semibold">
+              Objeto Virtual de Aprendizaje – Introducción a IA
+              <div class="small text-muted fw-normal">OVA interactivo (eXeLearning)</div>
+            </td>
+            <td>
+              <a href="https://ailectus.com/ova/iagd/t11/" target="_blank" class="btn btn-outline-primary btn-sm w-100">
+                Ver recurso
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <span class="badge bg-success">Genially</span>
+            </td>
+            <td class="fw-semibold">
+              Presentación interactiva – Redes Neuronales
+              <div class="small text-muted fw-normal">Presentación interactiva (Genially)</div>
+            </td>
+            <td>
+              <a href="https://view.genially.com/666386f6f01fdd0014c2f489/learning-experience-didactic-unit-redes-neuronal" target="_blank" class="btn btn-outline-primary btn-sm w-100">
+                Ver recurso
+              </a>
+            </td>
+          </tr>
+
+                    <tr>
+            <td>
+              <span class="badge bg-success">Genially</span>
+            </td>
+            <td class="fw-semibold">
+              Presentación interactiva – Inteligencia artificial Conceptos básicos
+              <div class="small text-muted fw-normal">Presentación interactiva (Genially)</div>
+            </td>
+            <td>
+              <a href="https://view.genially.com/64cb17664bb5160012221da0/interactive-content-conceptos-basicos-de-ia" target="_blank" class="btn btn-outline-primary btn-sm w-100">
+                Ver recurso
+              </a>
+            </td>
+          </tr>
+
+                    <tr>
+            <td>
+              <span class="badge bg-success">Genially</span>
+            </td>
+            <td class="fw-semibold">
+              Presentación interactiva – Formatos de Curso Estándar Moodle
+              <div class="small text-muted fw-normal">Presentación interactiva (Genially)</div>
+            </td>
+            <td>
+              <a href="https://view.genially.com/65726d1db7af010015857703/guide-formatos-de-curso-en-moodle" target="_blank" class="btn btn-outline-primary btn-sm w-100">
+                Ver recurso
+              </a>
+            </td>
+          </tr>
+
+                    <tr>
+            <td>
+              <span class="badge bg-success">Genially</span>
+            </td>
+            <td class="fw-semibold">
+              Presentación interactiva – Día MUNDIAL del Libro
+              <div class="small text-muted fw-normal">Presentación interactiva (Genially)</div>
+            </td>
+            <td>
+              <a href="https://view.genially.com/66271ff363cc280015328b43/interactive-content-5-libros-para-despertar-el-interes-en-la-lectura" target="_blank" class="btn btn-outline-primary btn-sm w-100">
+                Ver recurso
+              </a>
+            </td>
+          </tr>
+
+                    <tr>
+            <td>
+              <span class="badge bg-success">Genially</span>
+            </td>
+            <td class="fw-semibold">
+              Presentación interactiva – Mujeres que hicieron historia
+              <div class="small text-muted fw-normal">Presentación interactiva (Genially)</div>
+            </td>
+            <td>
+              <a href="https://view.genially.com/65e79a3307167700145582f9/interactive-content-mujeres-que-hicieron-historia" target="_blank" class="btn btn-outline-primary btn-sm w-100">
+                Ver recurso
+              </a>
+            </td>
+          </tr>
+
+                    <tr>
+            <td>
+              <span class="badge bg-success">Genially</span>
+            </td>
+            <td class="fw-semibold">
+              Presentación interactiva – Herramientas búsqueda especializada Google
+              <div class="small text-muted fw-normal">Presentación interactiva (Genially)</div>
+            </td>
+            <td>
+              <a href="https://view.genially.com/65173d91572e4100114c1be9/interactive-content-busqueda-especializada-en-google" target="_blank" class="btn btn-outline-primary btn-sm w-100">
+                Ver recurso
+              </a>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SEPARADOR -->
+  <div class="section-divider my-5"></div>
+
+  <!-- SECCIÓN: HERRAMIENTAS -->
+  <div class="text-center mb-4">
+    <h3 class="fw-bold mb-2">Herramientas para la creación de recursos educativos</h3>
+    <p class="text-muted mb-0">Seleccionadas para docentes y formadores: interactividad, diseño y multimedia.</p>
+  </div>
+
+  <div class="row g-4 mt-2">
+    {% for r in recursos %}
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100 border-0 shadow-sm resource-card">
+
+        <div class="card-body d-flex flex-column p-4">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <span class="badge text-bg-light">{{ r.type }}</span>
+            <span class="tool-icon">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+            </span>
+          </div>
+
+          <h5 class="fw-semibold mb-2">{{ r.name }}</h5>
+
+          <div class="mt-auto pt-2">
+            <a href="{{ r.url }}" target="_blank" class="btn btn-outline-primary btn-sm w-100">
+              Abrir recurso
+              <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i>
+            </a>
+            <small class="text-muted d-block mt-2" style="word-break: break-all;">
+              {{ r.url }}
+            </small>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+</section>
+{% endblock %}
+
+{% block extra_head %}
+<style>
+  /* === Bloques tipo card === */
+  .section-card{
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.06);
+    border-radius: 16px;
+    box-shadow: 0 10px 28px rgba(0,0,0,.06);
+    padding: 22px;
+  }
+  .section-divider{
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0,0,0,.12), transparent);
+  }
+
+  /* === Badge suave === */
+  .badge-soft{
+    background: rgba(14, 20, 36, .08);
+    color: #0E1424;
+    border: 1px solid rgba(14, 20, 36, .15);
+    font-weight: 600;
+    padding: 8px 10px;
+    border-radius: 999px;
+  }
+
+  /* === Tabla bonita === */
+  .resource-table thead th{
+    background: #f8f9fa;
+    font-size: .9rem;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(0,0,0,.06);
+    padding: 14px 14px;
+  }
+  .resource-table tbody td{
+    padding: 14px 14px;
+    border-bottom: 1px solid rgba(0,0,0,.06);
+  }
+  .resource-table tbody tr:hover{
+    background: #fafafa;
+  }
+
+  /* === Cards herramientas === */
+  .resource-card{
+    border-radius: 16px;
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .resource-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 14px 34px rgba(0,0,0,.12) !important;
+  }
+
+  .tool-icon{
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(14, 20, 36, .08);
+    color: #0E1424;
+  }
+
+  /* Botones Ailectus */
+  .btn-outline-primary{
+    color: #0E1424;
+    border-color: #0E1424;
+  }
+  .btn-outline-primary:hover{
+    background: #0E1424;
+    color: #fff;
+  }
+</style>
+{% endblock %}

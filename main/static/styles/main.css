@@ -46,3 +46,125 @@
   filter: saturate(1.02) contrast(1.02);
   border: 1px solid #eaeaea;
 }
+
+.portfolio-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-4px);
+  transition: all 0.3s ease;
+}
+
+.portfolio-card-text {
+  transition: transform .2s ease, box-shadow .2s ease;
+  border-radius: 14px;
+}
+
+.portfolio-card-text:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,.12);
+}
+
+.portfolio-card-text .fa-chalkboard-user {
+  color: #0E1424; /* color Ailectus */
+}
+
+.portfolio-card-text .btn-outline-primary {
+  color: #0E1424;
+  border-color: #0E1424;
+}
+
+.portfolio-card-text .btn-outline-primary:hover {
+  background-color: #0E1424;
+  color: #fff;
+}
+
+.btn-outline-primary {
+  color: #0E1424;
+  border-color: #0E1424;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0E1424;
+  color: #fff;
+}
+
+
+.ova-frame {
+    background: #0E1424;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.ova-header {
+    background: linear-gradient(90deg, #0E1424, #1b2a4a);
+    color: #ffffff;
+    padding: 12px 20px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.ova-body {
+    background: #ffffff;
+}
+
+.ova-body iframe {
+    width: 100%;
+    height: 80vh;
+    border: none;
+}
+
+.genially-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.genially-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.resource-card{
+  border-radius: 14px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.resource-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,.12) !important;
+}
+
+.recursos-section {
+  background-color: #d3e0ef; 
+}
+
+.recursos-section .card {
+  background-color: #ffffff;
+}
+
+.recursos-section h2,
+.recursos-section h3 {
+  color: #0E1424;
+}
+
+.section-divider {
+  width: 100%;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.section-divider svg {
+  display: block;
+  width: 100%;
+  height: 90px;
+}

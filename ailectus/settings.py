@@ -139,3 +139,44 @@ EMAIL_TIMEOUT = 30
 
 # (Opcional) quién recibe notificaciones de errores del servidor
 ADMINS = [("Admin", "admin@ailectus.com")]
+
+
+
+GENIALLY_PRESENTATIONS = [
+    {
+        "slug": "redes-neuronales",
+        "title": "Redes Neuronales",
+        "url": "https://view.genially.com/666386f6f01fdd0014c2f489",
+        "short": "Redes neuronales.",
+    },
+    {
+        "slug": "ia-conceptos-basicos",
+        "title": "IA para Docentes",
+        "url": "https://view.genially.com/64cb17664bb5160012221da0",
+        "short": "Inteligencia artificial - Conceptos básicos.",
+    },
+    {
+        "slug": "formatos-curso-estandar",
+        "title": "Formatos de Curso Estándar",
+        "url": "https://view.genially.com/65726d1db7af010015857703",
+        "short": "Formatos de Curso Estándar",
+    },
+    {
+        "slug": "dia-mundial-del-libro",
+        "title": "Día MUNDIAL del Libro",
+        "url": "https://view.genially.com/66271ff363cc280015328b43",
+        "short": "Día MUNDIAL del Libro",
+    },
+    {
+        "slug": "mujeres-que-hicieron-historia",
+        "title": "Mujeres que hicieron historia",
+        "url": "https://view.genially.com/65e79a3307167700145582f9",
+        "short": "Mujeres que hicieron historia",
+    },
+        {
+        "slug": "herramientas-busqueda-especializada-google",
+        "title": "Herramientas búsqueda especializada Google",
+        "url": "https://view.genially.com/65173d91572e4100114c1be9",
+        "short": "Herramientas búsqueda especializada Google",
+    },
+]

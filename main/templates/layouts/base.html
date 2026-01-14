@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -25,6 +26,9 @@
   <!-- Estilos propios -->
   <link rel="stylesheet" href="{% static 'styles/main.css' %}">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   {% block extra_head %}{% endblock %}
 </head>
 
@@ -41,9 +45,9 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link{% if request.path == '/' %} active{% endif %}" href="/">Inicio</a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link" href="#portafolio">Portafolio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
+          <li class="nav-item"><a class="nav-link" href="{% url 'home' %}#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="{% url 'home' %}#portafolio">Portafolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="{% url 'home' %}#cursos">Cursos</a></li>
           <li class="nav-item"><a class="nav-link" href="{% url 'contacto' %}">Contacto</a></li>
           <li class="nav-item">
             <a href="https://cursos.ailectus.com" class="btn btn-outline-light ms-3" target="_blank"
