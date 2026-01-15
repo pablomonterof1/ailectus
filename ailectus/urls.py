@@ -11,4 +11,5 @@ urlpatterns = [
     path("genially/", main_views.genially_view, name="genially"),
     path("presentaciones/<slug:slug>/", main_views.genially_detail_view, name="genially_detail"),
     path("recursos/", main_views.recursos_view, name="recursos"),
+    path("quienessomos/", main_views.quienessomos_view, name="quienessomos"),
 ]

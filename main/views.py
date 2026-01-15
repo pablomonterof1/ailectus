@@ -10,6 +10,8 @@ from django.http import Http404
 def home(request):
     return render(request, "home.html", {"now": now()})
 
+def quienessomos_view(request):
+    return render(request, "quienessomos.html")
 
 def contacto_view(request):
     if request.method == "POST":
