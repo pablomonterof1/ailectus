@@ -72,9 +72,9 @@
         © {{ now|date:"Y" }} Ailectus — Contenido educativo, cursos y consultoría.
       </p>
       <div class="small">
-        <a class="text-decoration-none me-3" href="#servicios">Servicios</a>
-        <a class="text-decoration-none me-3" href="#portafolio">Portafolio</a>
-        <a class="text-decoration-none" href="#contacto">Contacto</a>
+        <a class="text-decoration-none me-3" href="{% url 'home' %}#servicios">Servicios</a>
+        <a class="text-decoration-none me-3" href="{% url 'home' %}#portafolio">Portafolio</a>
+        <a class="text-decoration-none" href="{% url 'contacto' %}">Contacto</a>
       </div>
     </div>
   </footer>
