@@ -13,13 +13,14 @@ técnica.{% endblock %}
     <div class="row align-items-center g-4">
       <div class="col-lg-7">
         <h1 class="display-5 fw-bold mb-3">
-          Construimos experiencias de aprendizaje con <span class="brand-accent">tecnología</span> y <span
-            class="brand-accent">pedagogía</span>.
+          Diseñamos <span class="brand-accent">experiencias de aprendizaje</span> que transforman.
         </h1>
-        <p class="lead text-secondary">
-          OVAs, cursos, capacitación y consultoría con foco en Moodle e IA.
-          Ingeniería en Electrónica y Telecomunicaciones + Máster en IA.
+        <p class="lead text-secondary" style="text-align: justify;">
+          Producción de contenido educativo, consultoría en programas formativos y plataformas LMS personalizadas,
+          integrando pedagogía, tecnología e inteligencia artificial para lograr modelos de educación digital efectivos,
+          escalables y sostenibles.
         </p>
+        <br>
         <div class="d-flex gap-2 mt-3">
           <a href="#servicios" class="btn btn-primary btn-lg">Ver servicios</a>
           <a href="#" class="btn btn-outline-primary btn-lg">Acceder a la plataforma de cursos</a>
@@ -29,7 +30,7 @@ técnica.{% endblock %}
         <img src="{% static 'logo1.png' %}" class="img-fluid" alt="Ilustración Ailectus" />
       </div>
     </div>
-    
+
   </div>
 </section>
 
@@ -101,7 +102,7 @@ técnica.{% endblock %}
   </div>
 </section>
 <section class="py-5 brand-accent text-center" style="background-color: #345372;">
-  <div class="container" >
+  <div class="container">
     <h2 class="fw-bold mb-3">Campus Virtual Ailectus</h2>
     <p class="text-secondary mb-4 text-white">
       Accede a nuestros cursos, certificaciones y capacitaciones en línea.
@@ -120,47 +121,43 @@ técnica.{% endblock %}
     </div>
     <div class="row g-4">
 
-  <!-- 🧩 OVA -->
-  <div class="col-md-6 col-lg-4">
-    <div class="card h-100 shadow-sm border-0 portfolio-card">
-      <img src="{% static 'img/portafolio/ova.png' %}" class="card-img-top" alt="OVA Educativo">
+      <!-- 🧩 OVA -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0 portfolio-card">
+          <img src="{% static 'img/portafolio/ova.png' %}" class="card-img-top" alt="OVA Educativo">
 
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title fw-semibold">OVAs Educativos</h5>
-        <p class="card-text text-secondary">
-          Objeto Virtual de Aprendizaje interactivo desarrollado para formación en línea.
-        </p>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fw-semibold">OVAs Educativos</h5>
+            <p class="card-text text-secondary">
+              Objeto Virtual de Aprendizaje interactivo desarrollado para formación en línea.
+            </p>
 
-        <a href="{% url 'ova' %}"
-           target="_blank"
-           class="btn btn-outline-primary mt-auto">
-          Ver recurso
-        </a>
+            <a href="{% url 'ova' %}" target="_blank" class="btn btn-outline-primary mt-auto">
+              Ver recurso
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <!-- 🎨 Genially -->
-  <div class="col-md-6 col-lg-4">
-    <div class="card h-100 shadow-sm border-0 portfolio-card">
-      <img src="{% static 'img/portafolio/presinter.png' %}" class="card-img-top" alt="Presentación Genially">
+      <!-- 🎨 Genially -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0 portfolio-card">
+          <img src="{% static 'img/portafolio/presinter.png' %}" class="card-img-top" alt="Presentación Genially">
 
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title fw-semibold">Presentaciones interactivas</h5>
-        <p class="card-text text-secondary">
-          Presentación interactiva desarrollada en Genially para capacitación educativa.
-        </p>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fw-semibold">Presentaciones interactivas</h5>
+            <p class="card-text text-secondary">
+              Presentación interactiva desarrollada en Genially para capacitación educativa.
+            </p>
 
-        <a href="{% url 'genially' %}"
-           target="_blank"
-           class="btn btn-outline-primary mt-auto">
-          Ver presentación
-        </a>
+            <a href="{% url 'genially' %}" target="_blank" class="btn btn-outline-primary mt-auto">
+              Ver presentación
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-</div>
+    </div>
   </div>
 </section>
 
